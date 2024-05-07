@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Naki Zafer Uzunhasan</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body> <!-- Sitede gözükecek alan -->
+
+	<div id="baslik" >
+
+		<img src="resimler/logo.png">
+
+	</div>
+
+	<div id="benkimim" > 
+        
+		<h1> Ben Kimim ?</h1>
+
+		<p>
+			Ben Naki Zafer Uzunhasan. Ben 11 yaşındayım. 3 tane kuzenim var. Gamze adlıda kardeşim var. Hobilerim kodlama ve futbol. Annemin adı Kıymet. Babamın adı Uğur. Amcamın adı Nail. Yengemin adı Aslı. En büyük kuzenimin adı Ece. Ortanca kuzenimin adı Begüm. En küçük kuzenimin adı Zeynep. Küçük dediğime bakmayın benden hepsi büyük. Kardeşimin adı Gamze. Annemin yaşı 37. Babamın yaşı 43. Kardeşimin yaşı 8. 
+
+	</div>
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<div id="slider">
+	<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 6</div>
+    <img src="resimler/Galatasaray.png" style="width:100%">
+    <div class="text">Galatasaray</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 6</div>
+    <img src="resimler/Fenerbahçe.png" style="width:100%">
+    <div class="text">Fenerbahçe</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 6</div>
+    <img src="resimler/Beşiktaş.png" style="width:100%">
+    <div class="text">Beşiktaş</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 6</div>
+    <img src="resimler/trabzon.png" style="width:100%">
+    <div class="text">Trabzon</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 6</div>
+    <img src="resimler/giresunspor.png" style="width:100%">
+    <div class="text">Giresunspor</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">6 / 6</div>
+    <img src="resimler/ankaragücü.png" style="width:100%">
+    <div class="text">Ankaragücü</div>
+  </div>
+    <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+</div>
+</div>
+	<div id="egitimler" >
+		
+		<div class="duzenleme" >
+		
+			<div id="resim"> 
+
+			<img src="resimler/egitimresmi.png">
+
+			</div>
+			
+			<div id="yazi"> 
+
+					<h2> ilgi alanlarım</h2>
+
+					<ul>
+						<li>Futbol</li>
+						<li>Kodlama</li>
+					</ul>
+
+			</div>
+
+		<div class="temizle" ></div>
+
+	</div>
+	</div>
+
+	<div id="logo">
+
+		<div class="duzenleme">
+
+			<h2>Sporlar</h2>
+
+			<div class="logokutusu">
+				<img src="resimler/Football.png">
+			</div>
+			<div class="logokutusu">
+				<img src="resimler/Basket.png">
+			</div>
+			<div class="logokutusu">
+				<img src="resimler/voleybol.png">
+			</div>
+			<div class="logokutusu">
+				<img src="resimler/Tenis.png">
+			</div>
+
+			<div class="temizle"></div>
+
+		</div>
+
+	</div>
+
+	<div id="iletisim"> 
+
+		<h2>İletişim</h2> 
+		<p class="telefon" >+90 999 999 99 98</p>
+		<p>banaulasim@gmail.com</p>
+		<p><a href="https://www.google.com.tr/?hl=tr">www.banaulasin.com</a></p>
+		
+		<hr>	
+
+		<p>Copyright © 2024 Naki Zafer Uzunhasan - Tüm Hakları Saklıdır.</p>
+
+	</div>
+
+</body>
+
+</html>
